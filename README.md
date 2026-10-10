@@ -1,11 +1,11 @@
-# Allocs Webmap for PrismaCore
-Patched map.js for using PrismaCore WebApis.
+# Allocs Webmap for ServerCore
+Patched map.js for using ServerCore WebApis.
 
 A20 and lower: Replace map.js in /Mods/Allocs_WebAndMapRendering/webserver/js
 
 A21 and higher: Replace map.js in /Mods/Allocs_WebAndMapRendering/webserver_legacy/js
 
-To configure connection to CPM's WebAPI, make sure the port CPM's WebUI is running on, is filled in map.js (first line) with 'var ClaimCreatorWebUiPort = 11111;'
+To configure connection to ServerCore's WebAPI, make sure the port ServerCore's WebUI is running on, is filled in map.js (first line) with 'var ClaimCreatorWebUiPort = 11111;'
 
 Requires permission level 2000 for the specific api's in ClaimCreator_permissions.xml or you can create apiuser(s) for validated access to any of the apis, to be able to let them show in allocs webmap.
 Set permission lower than 2000 or dont have apiuser access and the layers will not show on allocs webmap.
@@ -37,18 +37,18 @@ For accessing the apis via api user, configure one or multiple apiusers in Claim
 ```
 after the api call of your choice in map.js.
 
-To disable/enable PrismaCore checkboxes on allocs webmap (comment or uncomment) look for the code between:
+To disable/enable ServerCore checkboxes on allocs webmap (comment or uncomment) look for the code between:
 ```
-// PrismaCore Checkboxes -->
+// ServerCore Checkboxes -->
 .......
-// <-- PrismaCore Checkboxes
+// <-- ServerCore Checkboxes
 ```
 
-The actual layer code for PrismaCore layers can be found between:
+The actual layer code for ServerCore layers can be found between:
 ```
-//PrismaCore Layers -->
+//ServerCore Layers -->
 .......
-// <-- PrismaCore Layers
+// <-- ServerCore Layers
 ```
 
 This version contains checkboxes and layers for:
